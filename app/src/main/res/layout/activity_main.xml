@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:translationY="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_marginStart="1dp">
+            android:paddingRight="2dip" >
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="allClear"
+                android:text="AC"
+                android:textSize="30sp"
+                tools:text="AC" />
+
+            android:paddingRight="2dip" >
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="move_left"
+                android:text="L"
+                android:textSize="30sp"
+                tools:text="L" />
+            android:paddingRight="2dip" >
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="move_right"
+                android:text="R"
+                android:textSize="30sp"
+                tools:text="R" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="delete"
+                android:text="D"
+                android:textSize="30sp"
+                tools:text="D" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="("
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="^"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="%"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text=")"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="1"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="2"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="3"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="/"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="4"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="5"
+                android:textSize="30sp"
+                tools:text="5" />
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="6"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="*"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button17"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="7"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button18"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="8"
+                android:textSize="30sp"
+                tools:text="8" />
+
+            <Button
+                android:id="@+id/button19"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="9"
+                android:textSize="30sp"
+                tools:text="9" />
+
+            <Button
+                android:id="@+id/button20"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="+"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button21"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="-"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button22"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button23"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addToDispl"
+                android:text="."
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button24"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="equals"
+                android:text="="
+                android:textSize="30sp" />
+        </TableRow>
+    </TableLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:height="60dp"
+                android:fontFamily="serif-monospace"
+                android:isScrollContainer="true"
+                android:lines="1"
+                android:maxLines="1"
+                android:scrollY="500dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="horizontal"
+                android:textAlignment="viewStart"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
